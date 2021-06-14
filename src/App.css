@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.body {
+  background-color: aqua;
+  margin-right: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contener {
+  width: 900px;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: baseline;
+  font-size: 35px;
+  box-sizing: border-box;
+  padding-top: 6px;
+  margin-bottom: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.User {
+  background-color: bisque;
+  display: flex;
+}
+.User p {
+  margin-top: 15px;
+  font-size: 17px;
+  margin-right: 15px;
+}
+svg {
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+.Accounts {
+  background-color: lightblue;
+}
+.Account {
+  background-color: khaki;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+}
+.Title {
+  display: flex;
+  justify-content: space-between;
+  height: 43px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: lightcoral;
+}
+.Operation {
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+}
+.Operation div {
+  height: 30px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.Operation b {
+  background-color: blue;
+  margin-left: 30px;
+  color: grey;
+}
+.op-info {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 30px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Operation em {
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Operation strong {
+  background-color: red;
+}
+.Account button {
+  background-color: #fff;
+  align-self: flex-end;
+  color: grey;
+  border-radius: 5px;
+  border: none;
+  width: 80px;
+  height: 30px;
+  font-size: 10px;
+  margin-top: 10px;
 }
