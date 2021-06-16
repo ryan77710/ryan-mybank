@@ -1,29 +1,37 @@
 .body {
-  background-color: aqua;
-  margin-right: 40px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebeff1;
 }
 .contener {
   width: 900px;
   margin: 0 auto;
 }
 .Header {
-  background-color: aquamarine;
+  background-color: #263438;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
-  align-items: baseline;
   font-size: 35px;
   box-sizing: border-box;
   padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 30px;
+  color: white;
+}
+.Header svg {
+  color: black;
 }
 .User {
-  background-color: bisque;
   display: flex;
 }
 .User p {
   margin-top: 15px;
-  font-size: 17px;
+  font-size: 20px;
   margin-right: 15px;
 }
 svg {
@@ -31,14 +39,20 @@ svg {
   background-color: white;
   border-radius: 50%;
 }
-.Accounts {
-  background-color: lightblue;
+
+.Accounts > div:nth-child(2) > div:nth-child(1) {
+  background-color: #c2195a;
 }
 .Account {
-  background-color: khaki;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+}
+.Account > div > div:nth-child(even) {
+  background-color: #ffffff;
+}
+.Account > div > div:nth-child(odd) {
+  background-color: #f7f7f7;
 }
 .Title {
   display: flex;
@@ -48,21 +62,26 @@ svg {
   box-sizing: border-box;
   padding: 15px;
   border-radius: 5px;
-  background-color: lightcoral;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
 }
+.operation-container {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .Operation {
-  background-color: lightpink;
   display: flex;
   align-items: center;
 }
 .Operation div {
   height: 30px;
-  border-bottom: 1px solid black;
   display: flex;
   align-items: center;
 }
 .Operation b {
-  background-color: blue;
   margin-left: 30px;
   color: grey;
 }
@@ -78,9 +97,6 @@ svg {
   background-color: white;
 }
 
-.Operation strong {
-  background-color: red;
-}
 .Account button {
   background-color: #fff;
   align-self: flex-end;

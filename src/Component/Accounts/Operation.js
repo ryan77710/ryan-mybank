@@ -6,7 +6,7 @@ const Operation = (props) => {
       <b>{props.date}</b>
       <div className="op-info">
         <em>{props.description}</em>
-        <strong>{props.amount}</strong>
+        <strong>{props.amount.toFixed(2)} €</strong>
       </div>
     </div>
   );
